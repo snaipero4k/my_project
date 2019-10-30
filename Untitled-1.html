@@ -1,0 +1,35 @@
+<!DOCTAYP HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head> 
+<body>
+    <p> Начало документа </p>
+        <script >
+            var login = prompt('Введите логин', '');
+            var pass;
+              if (login == 'Админ') {
+                  pass = prompt('Введите пароль', '')
+                    if (pass == 'Черный Властелин') {
+                        alert ('Добро пожаловать');
+                    }
+                    else if (pass == undefined) {
+                        alert ('Вход отменен');
+                    }
+                    else if (pass != 'Черный Властелин') {
+                        alert ('Пароль не верен');
+                    }
+              } 
+              else if (login ==  null) {
+                  alert ('Вход отменен');
+              } 
+              else if (login != 'Админ') {
+                  alert ('Я вас не знаю');
+              }
+            
+           
+        </script>
+    <p> Конец документа </p>
+</body>
+    </html >
